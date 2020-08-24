@@ -6,4 +6,8 @@ This will also give people the option to run them from containers using Docker i
 
 This will give people near unlimited numbers of virtual users to test their system without needing to worry about the infrastructure behind the distribution.
 
+## Running the test normally on the CLI
 
+```
+ sh jmeter.sh -n -t sampletest.jmx
+```

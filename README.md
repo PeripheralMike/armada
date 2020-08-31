@@ -11,3 +11,17 @@ This will give people near unlimited numbers of virtual users to test their syst
 ```
  sh jmeter.sh -n -t sampletest.jmx
 ```
+
+
+## Requirements 
+AWS CLI
+A Jmeter Test Script
+An AWS account
+
+## Creating the keypair
+This will allow you to create a keypair for this exercise
+
+```
+aws ec2 create-key-pair --key-name armada-sandbox --query 'KeyMaterial' --output text > armada-sandbox.pem && chmod 400 armada-sandbox.pem
+```
+

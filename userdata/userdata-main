@@ -48,4 +48,4 @@ sudo apt install htop
 
 # something here to install jmeter?
 
-
+sudo mkdir /home/ubuntu/MAIN

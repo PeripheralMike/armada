@@ -49,3 +49,5 @@ sudo apt install htop
 # Step here to install jmeter
 
 #Step here to start jmeter
+
+sudo mkdir /home/ubuntu/SERVER

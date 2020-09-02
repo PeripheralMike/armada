@@ -5,6 +5,17 @@
    },
    "Resources":{
       
+      "S3Bucket":{
+      "Type" : "AWS::S3::Bucket",
+      "Properties" : {
+         "Tags" : [
+            {
+               "Key" : "purpose",
+               "Value" : "armada-sandbox"
+            }
+         ]
+      }
+   },
     
     "LaunchTemplate":{
          "Type":"AWS::EC2::LaunchTemplate",
@@ -188,7 +199,7 @@
       "DependsOn":["LaunchTemplate", "SubnetA"], 
       "Properties":{
          "SpotFleetRequestConfigData":{
-            "TargetCapacity":10,
+            "TargetCapacity":1,
             "IamFleetRole":"arn:aws:iam::424956271160:role/AmazonEC2SpotFleetRole",
             "LaunchTemplateConfigs":[
                {

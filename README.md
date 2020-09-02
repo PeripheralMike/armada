@@ -17,6 +17,7 @@ This will give people near unlimited numbers of virtual users to test their syst
 AWS CLI
 A Jmeter Test Script
 An AWS account
+eu-west-1 (for AMI purposes)
 
 ## Creating the keypair
 This will allow you to create a keypair for this exercise
